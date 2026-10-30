@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nimew! — Komunitas Anime & Kultur Pop Jepang</title>
+  <meta name="description" content="nimew! adalah komunitas anime ramah dan inklusif untuk penggemar kultur jejepangan di Indonesia. Diskusi santai, nobar, fanart showcase, dan event seru.">
+  
+  <!-- Favicon icon with SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="nimew! Beranda">
+        <span class="logo-mark">n!</span>
+        <span class="logo-text">nimew<span class="dot">!</span></span>
+        <span class="logo-jp">ニメウ</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#activities" class="nav-link">Kegiatan</a></li>
+          <li class="nav-item"><a href="#recommender" class="nav-link">Rekomendasi</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-primary">Gabung Kami</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">MENU</span>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Tutup menu">&times;</button>
+    </div>
+    <ul class="drawer-list">
+      <li><a href="#home" class="drawer-link">Beranda</a></li>
+      <li><a href="#about" class="drawer-link">Tentang nimew!</a></li>
+      <li><a href="#activities" class="drawer-link">Kegiatan & Program</a></li>
+      <li><a href="#recommender" class="drawer-link">Anime Generator</a></li>
+      <li><a href="#contact" class="drawer-link">Hubungi & Gabung</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <p class="drawer-text">Komunitas wibu ramah & bebas elitisme.</p>
+      <a href="#contact" class="btn btn-primary btn-block">Masuk Discord</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main>
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="tag-pulse"></span>
+            <span class="tag-jp">アニメコミュニティ</span>
+            <span class="tag-sep">•</span>
+            <span>Ruang Nyaman Penggemar Jejepangan</span>
+          </div>
+
+          <h1 class="hero-title">
+            Tempat kumpul santai penikmat <span class="gradient-text">anime & pop culture</span> Jepang.
+          </h1>
+
+          <p class="hero-description">
+            <strong>nimew!</strong> adalah ruang eksplorasi, apresiasi, dan diskusi seputar anime, manga, dan kultur jejepangan tanpa elitisme. Dari penonton kasual hingga kolektor kawakan, semua punya tempat di sini.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#activities" class="btn btn-primary">
+              <span>Jelajahi Kegiatan</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <span>Kenal Lebih Dekat</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Counter -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="1400">1,400+</span>
+              <span class="stat-label">Anggota Aktif</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="50">50+</span>
+              <span class="stat-label">Nobar Dihelat</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="100">100%</span>
+              <span class="stat-label">Bebas Toxic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Preview Card -->
+        <div class="hero-visual">
+          <div class="preview-card">
+            <div class="preview-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="preview-channel">#anime-night-stage</span>
+              <span class="badge-live"><span class="live-dot"></span> LIVE NOW</span>
+            </div>
+
+            <div class="preview-body">
+              <div class="now-playing-badge">Sedang Berlangsung Nobar</div>
+              <h3 class="preview-anime-title">Frieren: Beyond Journey's End</h3>
+              <p class="preview-anime-sub">Episode 14–16 • Room Suara #1 (48 Orang)</p>
+
+              <!-- Progress bar & audio visualizer bar mimic -->
+              <div class="visualizer">
+                <span class="bar-v v1"></span>
+                <span class="bar-v v2"></span>
+                <span class="bar-v v3"></span>
+                <span class="bar-v v4"></span>
+                <span class="bar-v v5"></span>
+                <span class="bar-v v6"></span>
+                <span class="bar-v v7"></span>
+              </div>
+
+              <!-- Community Chat Bubble Teaser -->
+              <div class="preview-chat-list">
+                <div class="chat-bubble">
+                  <span class="avatar">🐱</span>
+                  <div class="chat-text">
+                    <strong>Rian_Zen:</strong> "Scene sihirnya gila bgt animasinya madhouse!"
+                  </div>
+                </div>
+                <div class="chat-bubble">
+                  <span class="avatar">🌸</span>
+                  <div class="chat-text">
+                    <strong>YukiNeko:</strong> "Soundtrack Evan Call emang ga pernah gagal sih 😭"
+                  </div>
+                </div>
+              </div>
+
+              <div class="preview-footer">
+                <span class="preview-hint">Setiap Jumat & Sabtu • 20:00 WIB</span>
+                <a href="#contact" class="preview-link">Join Stage &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-badge">
+          <span class="num">01</span>
+          <span class="text">TENTANG KAMI</span>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text-column">
+            <h2 class="section-title">
+              Komunitas yang dibangun dari rasa cinta, bukan <span class="accent-color">perdebatan genre</span>.
+            </h2>
+            <p class="about-lead">
+              <strong>nimew!</strong> bermula dari lingkaran kecil beberapa kawan yang sering kumpul di kedai kopi untuk ngobrolin adaptasi manga favorit mereka pada akhir tahun 2022.
+            </p>
+            <p class="about-paragraph">
+              Seringkali komunitas anime dicap terkotak-kotak, elitis, dan penuh spoiler tanpa peringatan. Kami ingin mengubah narasi itu. Di <strong>nimew!</strong>, baik kamu yang baru menyelesaikan anime pertamamu kemarin sore maupun yang sudah menghafal nama animator kawakan sejak 2005, kita semua duduk di meja yang sama.
+            </p>
+
+            <div class="values-list">
+              <div class="value-item">
+                <div class="value-icon">🛡️</div>
+                <div class="value-content">
+                  <h4>Safe Space & Zero Elitism</h4>
+                  <p>Tidak ada penghakiman selera tontonan. Dari shonen klasik, slice of life, mecha, hingga anime obscure, semuanya disambut hangat.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon">🤐</div>
+                <div class="value-content">
+                  <h4>Spoiler-Free Protocol</h4>
+                  <p>Pemberian tag spoiler ketat untuk anime yang sedang tayang dan rilisan manga terbaru demi kenyamanan bersama.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon">🎨</div>
+                <div class="value-content">
+                  <h4>Apresiasi Kreator Lokal</h4>
+                  <p>Dukungan nyata bagi para ilustrator, cosplayer, penulis fiksi penggemar, dan musisi jejepangan tanah air.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vision & Mission Card Column -->
+          <div class="about-cards-column">
+            <div class="card card-vision">
+              <div class="card-tag">VISI KAMI</div>
+              <h3>Membangun Ekosistem Fandom yang Sehat & Menginspirasi</h3>
+              <p>Menjadi wadah komunitas kultur anime nomor satu di Indonesia yang inklusif, edukatif, dan ramah bagi segala tingkatan penggemar.</p>
+            </div>
+
+            <div class="card card-mission">
+              <div class="card-tag">MISI KAMI</div>
+              <ul class="mission-checklist">
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Menyelenggarakan kegiatan nonton bersama dan diskusi terjadwal secara rutin tiap pekan.</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Menyediakan panggung showcase untuk kreator independen dalam komunitas agar karyanya lebih dikenal.</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Membangun kolaborasi positif dengan event organizer pop culture dan komunitas sejenis di berbagai kota.</span>
+                </li>
+                <li>
+                  <span class="check-icon">✓</span>
+                  <span>Menjaga etika dan atmosfer interaksi daring yang santun, suportif, dan kekeluargaan.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. MAIN CONTENT (ACTIVITIES & SHOWCASE) ==================== -->
+    <section class="section activities-section" id="activities">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-badge">
+            <span class="num">02</span>
+            <span class="text">PROGRAM & KEGIATAN</span>
+          </div>
+          <h2 class="section-title">Apa Saja yang Kita Lakukan di nimew!?</h2>
+          <p class="section-subtitle">
+            Bukan sekadar grup chat sepi. Kami punya agenda mingguan dan bulanan yang dirancang agar harimu selalu seru.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">Semua Program</button>
+          <button class="filter-btn" data-filter="online">Online / Discord</button>
+          <button class="filter-btn" data-filter="creative">Kreatif & Seni</button>
+          <button class="filter-btn" data-filter="offline">Gathering Offline</button>
+        </div>
+
+        <!-- Program Cards Grid -->
+        <div class="activities-grid" id="activitiesGrid">
+          <!-- Card 1 -->
+          <article class="activity-card" data-category="online">
+            <div class="card-header-bar">
+              <span class="card-type-badge online">Online Event</span>
+              <span class="card-cadence">Setiap Jumat & Sabtu</span>
+            </div>
+            <div class="card-icon-banner">🎬</div>
+            <h3 class="card-title">Weekly Anime Watch Party</h3>
+            <p class="card-desc">
+              Streaming bareng anime musiman (seasonal) atau movie klasik lewat Discord Stage dengan kualitas HD dan live reaction voice chat yang interaktif.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">Discord Stage</span>
+              <span class="meta-tag">Pukul 20.00 WIB</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="activity-card" data-category="online">
+            <div class="card-header-bar">
+              <span class="card-type-badge online">Diskusi Teori</span>
+              <span class="card-cadence">Setiap Minggu Malam</span>
+            </div>
+            <div class="card-icon-banner">📖</div>
+            <h3 class="card-title">Manga & Light Novel Circle</h3>
+            <p class="card-desc">
+              Ruang bedah chapter terbaru, spekulasi teori liar, bedah lore dunia isekai/fantasi, serta rekomendasi komik hidden gem yang belum terjamah.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">Channel Forum</span>
+              <span class="meta-tag">Anti-Spoiler Zone</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="activity-card" data-category="creative">
+            <div class="card-header-bar">
+              <span class="card-type-badge creative">Kreatif</span>
+              <span class="card-cadence">Minggu ke-2 & ke-4</span>
+            </div>
+            <div class="card-icon-banner">🎨</div>
+            <h3 class="card-title">Fanart & Cosplay Showcase</h3>
+            <p class="card-desc">
+              Ajang unjuk karya fanart digital, kostum cosplay, AMV (Anime Music Video), hingga review figure koleksi. Dapatkan feedback konstruktif dan spotlight akun medsomu!
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">Art Gallery</span>
+              <span class="meta-tag">Hadiah Bulanan</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="activity-card" data-category="online">
+            <div class="card-header-bar">
+              <span class="card-type-badge online">Fun Mini Game</span>
+              <span class="card-cadence">Bulanan</span>
+            </div>
+            <div class="card-icon-banner">🎮</div>
+            <h3 class="card-title">Otaku Trivia & Gaming Night</h3>
+            <p class="card-desc">
+              Uji seberapa dalam pengetahuan animemu lewat Kuis Kahoot berhadiah merchandise resmi! Plus scrim bareng game gacha seperti Genshin, Star Rail, dan Valorant.
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">Voice Channel</span>
+              <span class="meta-tag">Hadiah Merch</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="activity-card" data-category="offline">
+            <div class="card-header-bar">
+              <span class="card-type-badge offline">Offline Meetup</span>
+              <span class="card-cadence">Event Khusus</span>
+            </div>
+            <div class="card-icon-banner">🎪</div>
+            <h3 class="card-title">Comifuro & Matsuri Roadshow</h3>
+            <p class="card-desc">
+              Hunting bareng ke event akbar jejepangan di Jabodetabek & kota besar (Comic Frontier, Indonesia Anime Con, Jak-Japan Matsuri). Kita sediakan basecamp titik kumpul!
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">Basecamp Nyaman</span>
+              <span class="meta-tag">Photobooth Bareng</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="activity-card" data-category="creative">
+            <div class="card-header-bar">
+              <span class="card-type-badge creative">Publikasi</span>
+              <span class="card-cadence">Awal Musim</span>
+            </div>
+            <div class="card-icon-banner">📑</div>
+            <h3 class="card-title">Seasonal Guide & Watchlist</h3>
+            <p class="card-desc">
+              Tim kurator nimew! menyusun majalah panduan mini digital berisi ulasan sinopsis, studio produksi, dan rekomendasi rating tontonan anime musim baru (Spring/Summer/Fall/Winter).
+            </p>
+            <div class="card-meta">
+              <span class="meta-tag">E-Zine Gratis</span>
+              <span class="meta-tag">Kurasi Pilihan</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BONUS SECTION: ANIME RECOMMENDER TOOL ==================== -->
+    <section class="section recommender-section" id="recommender">
+      <div class="container">
+        <div class="recommender-box">
+          <div class="recommender-intro">
+            <span class="badge-pill">Fitur Interaktif Komunitas</span>
+            <h2 class="recommender-title">Lagi Bingung Mau Nonton Apa?</h2>
+            <p class="recommender-text">
+              Klik tombol di bawah untuk mendapatkan rekomendasi anime kurasi khusus anggota <strong>nimew!</strong> sesuai mood kamu hari ini!
+            </p>
+            
+            <div class="mood-selector">
+              <label for="moodSelect">Pilih Suasana Hati / Mood:</label>
+              <select id="moodSelect" class="styled-select">
+                <option value="all">Acak / Apapun Enak</option>
+                <option value="relaxing">Santai & Healing (Iyashikei / Slice of Life)</option>
+                <option value="hype">Penuh Semangat & Aksi (Shonen / Hype)</option>
+                <option value="mystery">Misteri & Bikin Mikir (Psychological / Thriller)</option>
+                <option value="emotional">Bikin Nangis & Haru (Drama / Romance)</option>
+              </select>
+            </div>
+
+            <button id="rollAnimeBtn" class="btn btn-primary btn-roll">
+              <span>🎲 Kocok Rekomendasi</span>
+            </button>
+          </div>
+
+          <div class="recommender-result" id="recommendationResult">
+            <div class="result-placeholder">
+              <div class="placeholder-icon">🍿</div>
+              <p>Pilih mood-mu lalu klik tombol <strong>"Kocok Rekomendasi"</strong> untuk memunculkan judul pilihan!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. CONTACT & JOIN SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-badge">
+          <span class="num">03</span>
+          <span class="text">HUBUNGI & BERGABUNG</span>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Community Hub Info -->
+          <div class="contact-info">
+            <h2 class="section-title">
+              Pintu kami selalu terbuka untuk <span class="gradient-text">teman baru</span>.
+            </h2>
+            <p class="contact-desc">
+              Punya pertanyaan seputar cara bergabung, ingin mendaftarkan komunitasmu untuk berkolaborasi, atau sekadar ingin menyapa pengurus? Jangan ragu hubungi kami.
+            </p>
+
+            <div class="social-channels">
+              <h4 class="channels-title">Platform Utama Komunitas:</h4>
+              
+              <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon discord">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                </div>
+                <div class="channel-detail">
+                  <span class="channel-name">Discord Server Utama</span>
+                  <span class="channel-desc">discord.gg/nimew-id (Buka 24/7)</span>
+                </div>
+                <span class="channel-action">Gabung &rarr;</span>
+              </a>
+
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </div>
+                <div class="channel-detail">
+                  <span class="channel-name">Instagram Resmi</span>
+                  <span class="channel-desc">@nimew.community (Info Event & Reels)</span>
+                </div>
+                <span class="channel-action">Follow &rarr;</span>
+              </a>
+
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon twitter">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </div>
+                <div class="channel-detail">
+                  <span class="channel-name">X (Twitter)</span>
+                  <span class="channel-desc">@nimew_id (Diskusi Cepat & Tren)</span>
+                </div>
+                <span class="channel-action">Follow &rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message & Registration Form -->
+          <div class="contact-form-card">
+            <h3 class="form-title">Tinggalkan Pesan atau Saran</h3>
+            <p class="form-subtitle">Ingin request nobar anime tertentu atau daftar jadi panitia event? Tulis di sini ya!</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="nameInput">Nama Panggilan / Nickname <span class="required">*</span></label>
+                <input type="text" id="nameInput" class="form-control" placeholder="Contoh: Kirito_Bogor atau Rina" required>
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactInput">Kontak (Discord / Email / IG) <span class="required">*</span></label>
+                <input type="text" id="contactInput" class="form-control" placeholder="Contoh: @rina_wibu atau rina@email.com" required>
+                <span class="error-msg" id="contactError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="categoryInput">Tujuan Pesan</label>
+                <select id="categoryInput" class="form-control styled-select">
+                  <option value="join">Tanya Cara Bergabung</option>
+                  <option value="suggest">Usulan Judul Nobar / Kegiatan</option>
+                  <option value="collab">Tawaran Kolaborasi / Media Partner</option>
+                  <option value="general">Sapaan Santai / Lainnya</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Isi Pesan <span class="required">*</span></label>
+                <textarea id="messageInput" rows="4" class="form-control" placeholder="Tuliskan pesan atau saranmu dengan santai..." required></textarea>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Kirim Pesan</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+
+            <!-- Success Notification Alert -->
+            <div class="form-alert-success" id="formSuccessAlert" style="display: none;">
+              <span class="alert-icon">🎉</span>
+              <div>
+                <strong>Arigatou gozaimasu!</strong>
+                <p>Pesanmu sudah diterima oleh tim pengurus nimew! Sampai jumpa di Discord server!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo footer-logo">
+            <span class="logo-mark">n!</span>
+            <span class="logo-text">nimew<span class="dot">!</span></span>
+          </a>
+          <p class="footer-tagline">
+            Komunitas independen penikmat anime, manga, dan kultur pop Jepang di Indonesia. Santai, ramah, dan bebas elitisme.
+          </p>
+          <div class="footer-jp-text">
+            「アニメを愛するすべての人へ、居心地の良い場所を。」
+          </div>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-heading">Navigasi Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang nimew!</a></li>
+            <li><a href="#activities">Program & Nobar</a></li>
+            <li><a href="#recommender">Anime Generator</a></li>
+            <li><a href="#contact">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-heading">Kegiatan Unggulan</h4>
+          <ul class="footer-links">
+            <li><a href="#activities">Discord Watch Party</a></li>
+            <li><a href="#activities">Manga & LN Discussion</a></li>
+            <li><a href="#activities">Fanart & Cosplay Hub</a></li>
+            <li><a href="#activities">Comifuro Gathering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-heading">Pedoman & Info</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Aturan Bebas Spoiler</a></li>
+            <li><a href="#about">Kode Etik Komunitas</a></li>
+            <li><a href="#contact">Daftar Volunteer</a></li>
+            <li><a href="#contact">FAQ Anggota Baru</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; <span id="currentYear">2026</span> <strong>nimew! Community</strong>. Dibuat dengan penuh ❤️ oleh dan untuk wibu Indonesia.
+        </div>
+        <div class="footer-extra-links">
+          <span>Statis & Ringan</span>
+          <span>•</span>
+          <span>HTML • CSS • JS Murni</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Kembali ke atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- External JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
